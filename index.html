@@ -606,7 +606,53 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe-wrap">
+          <p class="footer-subscribe-caption">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <label class="footer-subscribe-label"
+              ><input
+                type="email"
+                name="email"
+                class="footer-subscribe-input"
+                placeholder="E-mail" /></label
+            ><button class="footer-subscribe-button">
+              Subscribe
+              <svg class="footer-subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <!-- modal -->
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-btn" type="button" aria-label="Modal close button">
+          <svg class="modal-btn-icon" width="28" height="28">
+            <use href="./images/sprite.svg#icon-x-close"></use>
+          </svg>
+        </button>
+        <p class="modal-caption">
+          LEAVE A REVIEW ABOUT <span class="accent">OUR&nbsp;CHOCOLATE</span>
+        </p>
+        <form class="modal-form form" name="modal">
+          <label class="form-label" for="user_name">Name</label>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="text"
+              id="user_name"
+              name="user_name"
+            />
+            <svg class="form-icon" width="24" height="24">
+              <use href="./images/sprite.svg#x-close"></use>
+            </svg>
+          </div>
+
+          <button type="submit">Send form</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
