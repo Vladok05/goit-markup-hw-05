@@ -690,14 +690,13 @@ button {
 }
 .from-agreement {
   display: inline-flex;
-  font-family: Roboto;
   font-size: 12px;
-  line-height: 1.7;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   user-select: none;
 }
-.checkbox:checked + .from-agreement > .from-agreement-checkbox {
+.checkbox:checked + .from-agreement > {
   background-color: #404bbf;
 }
 
