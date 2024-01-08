@@ -687,6 +687,7 @@ button {
 /* ! custom checkbox */
 .checkbox-wrap {
   margin-bottom: 24px;
+  display: flex;
 }
 .from-agreement {
   display: inline-flex;
@@ -696,11 +697,9 @@ button {
   color: #8e8f99;
   user-select: none;
 }
-.checkbox:checked + .from-agreement > {
+.checkbox:checked + .from-agreement > .from-agreement-checkbox {
   background-color: #404bbf;
-}
-
-.checkbox:checked + .from-agreement > .from-agreement-icon {
+  border: none;
   opacity: 1;
 }
 
@@ -717,9 +716,10 @@ button {
 }
 
 .from-agreement-icon {
+  opacity: 1;
   fill: #fff;
-  opacity: 0;
 }
+
 .from-agreement-link {
   color: #4d5ae5;
   text-decoration: underline;
