@@ -62,7 +62,9 @@
       <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-titel">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button main-btn" type="button">
+            Order Service
+          </button>
         </div>
       </section>
       <!-- *section advantages -->
@@ -615,7 +617,7 @@
                 name="email"
                 class="footer-subscribe-input"
                 placeholder="E-mail" /></label
-            ><button class="footer-subscribe-button" type="submit">
+            ><button class="footer-subscribe-button main-btn" type="submit">
               Subscribe
               <svg class="footer-subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#frame"></use>
@@ -628,29 +630,86 @@
     <!-- modal -->
     <div class="backdrop is-open">
       <div class="modal">
-        <button class="modal-btn" type="button" aria-label="Modal close button">
-          <svg class="modal-btn-icon" width="28" height="28">
-            <use href="./images/sprite.svg#icon-x-close"></use>
+        <p class="modal-caption">
+          Leave your contacts and we will call you back
+        </p>
+        <button class="modal-btn" type="button" aria-label="modal close button">
+          <svg class="btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
-        <p class="modal-caption">
-          LEAVE A REVIEW ABOUT <span class="accent">OUR&nbsp;CHOCOLATE</span>
-        </p>
-        <form class="modal-form form" name="modal">
-          <label class="form-label" for="user_name">Name</label>
+        <form class="modal-form form" name="reviews">
           <div class="form-field">
-            <input
-              class="form-input"
-              type="text"
-              id="user_name"
-              name="user_name"
-            />
-            <svg class="form-icon" width="24" height="24">
-              <use href="./images/sprite.svg#x-close"></use>
-            </svg>
+            <label class="form-label" for="user_name">Name</label>
+            <div class="form-input-wrap">
+              <input
+                type="text"
+                name="user_name"
+                id="user_name"
+                class="form-input"
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#person-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="user_phone">Phone </label>
+            <div class="form-input-wrap">
+              <input
+                type="tel"
+                name="user_phone"
+                id="user_phone"
+                class="form-input"
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#phone-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="user_email">Email</label>
+            <div class="form-input-wrap">
+              <input
+                type="email"
+                name="user_email"
+                id="user_email"
+                class="form-input"
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#email-black"></use>
+              </svg>
+            </div>
           </div>
 
-          <button type="submit">Send form</button>
+          <div class="form-field">
+            <label class="form-label" for="comment"
+              >Comment
+              <div class="form-field"></div>
+            </label>
+            <textarea
+              class="form-textarea"
+              name="comment"
+              id="comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <label class="from-agreement"
+            ><input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="user-agreement"
+              value="false"
+              checked
+            />
+
+            <span class="from-agreement-checkbox"
+              ><svg class="from-agreement-icon" width="11" height="11">
+                <use href="./images/icons.svg#check"></use></svg></span
+            >I accept the terms and conditions of the
+            <a class="from-agreement-link">Privacy Policy</a>
+          </label>
+          <button class="form-btn main-btn">Send</button>
         </form>
       </div>
     </div>
