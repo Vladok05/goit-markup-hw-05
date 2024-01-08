@@ -613,7 +613,11 @@ button {
 .modal-btn:focus,
 .modal-btn:hover {
   background-color: #404bbf;
-  border: none;
+}
+
+.modal-btn:focus .btn-icon,
+.modal-btn:hover .btn-icon {
+  fill: #ffffff;
 }
 
 .btn-icon {
@@ -706,6 +710,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  user-select: none;
 }
 
 /* .checkbox:checked + .from-agreement-checkbox {
