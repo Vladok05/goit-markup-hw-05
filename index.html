@@ -630,39 +630,40 @@
     <!-- modal -->
     <div class="backdrop is-open">
       <div class="modal">
-        <p class="modal-caption">
-          Leave your contacts and we will call you back
-        </p>
         <button class="modal-btn" type="button" aria-label="modal close button">
           <svg class="btn-icon" width="8" height="8">
             <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
+        <p class="modal-caption">
+          Leave your contacts and we will call you back
+        </p>
+
         <form class="modal-form form" name="reviews">
           <div class="form-field">
-            <label class="form-label" for="user_name">Name</label>
+            <label class="form-label" for="user-name">Name</label>
             <div class="form-input-wrap">
               <input
                 type="text"
-                name="user_name"
-                id="user_name"
+                name="user-name"
+                id="user-name"
                 class="form-input"
               />
-              <svg class="form-icon" width="18" height="18">
+              <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#person-black"></use>
               </svg>
             </div>
           </div>
           <div class="form-field">
-            <label class="form-label" for="user_phone">Phone </label>
+            <label class="form-label" for="user-phone">Phone </label>
             <div class="form-input-wrap">
               <input
                 type="tel"
-                name="user_phone"
-                id="user_phone"
+                name="user-phone"
+                id="user-phone"
                 class="form-input"
               />
-              <svg class="form-icon" width="18" height="18">
+              <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#phone-black"></use>
               </svg>
             </div>
@@ -672,43 +673,45 @@
             <div class="form-input-wrap">
               <input
                 type="email"
-                name="user_email"
-                id="user_email"
+                name="user-email"
+                id="user-email"
                 class="form-input"
               />
-              <svg class="form-icon" width="18" height="18">
+              <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#email-black"></use>
               </svg>
             </div>
           </div>
 
-          <div class="form-field">
-            <label class="form-label" for="comment"
+          <div class="form-field textarea-wrap">
+            <label class="form-label" for="user-comment"
               >Comment
               <div class="form-field"></div>
             </label>
             <textarea
               class="form-textarea"
-              name="comment"
-              id="comment"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
-          <label class="from-agreement"
-            ><input
+          <div class="checkbox-wrap">
+            <input
               class="checkbox visually-hidden"
               type="checkbox"
+              id="user-privacy"
               name="user-agreement"
-              value="false"
+              value="true"
               checked
             />
-
-            <span class="from-agreement-checkbox"
-              ><svg class="from-agreement-icon" width="11" height="11">
-                <use href="./images/icons.svg#check"></use></svg></span
-            >I accept the terms and conditions of the
-            <a class="from-agreement-link">Privacy Policy</a>
-          </label>
+            <label class="from-agreement">
+              <span class="from-agreement-checkbox"
+                ><svg class="from-agreement-icon" width="11" height="11">
+                  <use href="./images/icons.svg#check"></use></svg></span
+              >I accept the terms and conditions of the
+              <a class="from-agreement-link">Privacy Policy</a>
+            </label>
+          </div>
           <button class="form-btn main-btn">Send</button>
         </form>
       </div>
